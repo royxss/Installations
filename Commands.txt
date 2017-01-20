@@ -1,0 +1,49 @@
+cd C:\Users\SROY\Documents\CodeBase\PythonWorkspace
+Upgrade PIP from cmd:
+python -m pip install --upgrade pip
+
+Install libraries from cmd:
+pip install matplotlib //this will also install numpy, cycler, six, pytz, date util, pyparsing
+pip install scikit-learn
+
+Check supported tags for installation through whl file. Use those tags to rename the install file.
+import pip; print(pip.pep425tags.get_supported())
+
+pip install scipy-0.18.0-cp35-cp35m-win32 //Download only the matching python version.
+pip install notebook //will also install jupyter, tornado, jsonschema
+pip install hyperopt
+
+install anaconda
+update anaconda:
+conda update conda
+conda update ipython
+conda update jupyter
+conda update scikit-learn
+conda update matplotlib
+conda update notebook
+conda update scipy	
+conda update pandas
+
+install python3 kernel:
+conda create -n py3k python=3 anaconda
+activate py3k
+ipython kernelspec install-self  ## or jupyter kernelspec install-self ## ipython kernel install
+
+jupyter notebook // start notebook after changing directory //not running
+ipython notebook --notebook-dir=C:\Users\SROY\Documents\CodeBase\PythonWorkspace  // will launch ipython
+
+TensorFlow:
+updated to python 3.5.2 64 bit
+update all packages from above
+pip install tensorflow
+/or pip install --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-0.12.0rc0-cp35-cp35m-win_amd64.whl
+
+Start tensorboard:
+C:\Anaconda3\Scripts\tensorboard.exe --logdir="C:\Users\SROY\Documents"
+
+Install Xgboost:
+https://www.ibm.com/developerworks/community/blogs/jfp/entry/Installing_XGBoost_For_Anaconda_on_Windows?lang=en
+
+
+
+
