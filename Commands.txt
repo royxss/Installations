@@ -33,17 +33,36 @@ jupyter notebook // start notebook after changing directory //not running
 ipython notebook --notebook-dir=C:\Users\SROY\Documents\CodeBase\PythonWorkspace  // will launch ipython
 
 TensorFlow:
-updated to python 3.5.2 64 bit
-update all packages from above
-pip install tensorflow
-/or pip install --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-0.12.0rc0-cp35-cp35m-win_amd64.whl
+Downgrade python: conda install python=3.5.3
+python --version
+
+conda install -c <> tensorflow=
+conda install -c conda-forge tensorflow=1.0.0  ** python 3.5
+
+import tensorflow as tf
+hello = tf.constant('Hello, TensorFlow!')
+sess = tf.Session()
+print(sess.run(hello))
 
 Start tensorboard:
 C:\Anaconda3\Scripts\tensorboard.exe --logdir="C:\Users\SROY\Documents"
 
-Install Xgboost:
+Install Theano:
+conda install theano
+
+Install Keras:
+conda install -c conda-forge keras=2.0.2
+
+Install Xgboost: (easy install in R)
 https://www.ibm.com/developerworks/community/blogs/jfp/entry/Installing_XGBoost_For_Anaconda_on_Windows?lang=en
+anaconda search -t conda xgboost
+conda install -c mikesilva xgboost=0.6a2  ** installs but does not import
+conda remove xgboost
+conda install -c mndrake xgboost=0.6 ** for python 2.7
 
+Install Keras on top Theano:
+conda install libpython
 
-
+Install neo4j:
+conda install -c mutirri py2neo=2.0.8
 
